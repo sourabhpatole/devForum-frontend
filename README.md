@@ -7,3 +7,4 @@
 - Install Daisy UI
 - add navbar component to App.jsx
 - install react router dom
+- create footer
