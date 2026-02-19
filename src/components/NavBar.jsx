@@ -9,17 +9,17 @@ const NavBar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleLogout = async () => {
-    console.log("handle logout is clicked");
+    // console.log("handle logout is clicked");
     try {
       await axios.post(`${BASE_URL}/logout`, {}, { withCredentials: true });
       dispatch(removeUser());
       return navigate("/login");
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
   const user = useSelector((store) => store.user);
-  console.log(user);
+  // console.log(user);
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
